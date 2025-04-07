@@ -12,7 +12,7 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-	df= pd.read_csv(r"C:\Users\Chakri Pagilla\Dropbox\PC\Desktop\Youtube-Comments-Spam-Detector-master[1] (2)\Youtube-Comments-Spam-Detector-master[1]\Youtube-Comments-Spam-Detector-master\YoutubeSpamMergedData.csv")
+	df= pd.read_csv(r"C:\Users\Harshitha Puli\Dropbox\PC\Desktop\Youtube-Comments-Spam-Detector-master[1] (2)\Youtube-Comments-Spam-Detector-master[1]\Youtube-Comments-Spam-Detector-master\YoutubeSpamMergedData.csv")
 	df_data = df[["CONTENT","CLASS"]]
 	# Features and Labels
 	df_x = df_data['CONTENT']
